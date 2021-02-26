@@ -1,6 +1,7 @@
 
 import discord
 import datetime
+import os
 
 
 class chatbot(discord.Client):
@@ -174,4 +175,5 @@ class chatbot(discord.Client):
 
 if __name__ == "__main__":
     client = chatbot()
-    client.run("ODEyMjY2MTgwNTUwMTk3MjU4.YC-P1A.cZah6ttFI3zyJ3aiM-ESOjR6eO8")
+    access_token = os.environ["BOT_TOKEN"]
+    client.run("access_token")
